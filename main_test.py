@@ -15,3 +15,11 @@ if (actual_message == expected_message):
     print('Is correct')
 else:
     print('Is incorrect')
+
+expected_message = '4 pennies'
+actual_message = return_big_coins(4)
+
+if (actual_message == expected_message):
+    print('Is correct')
+else:
+    print('Is incorrect')

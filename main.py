@@ -18,9 +18,13 @@ def return_big_coins(input_number):
 
     if dime > 0:
         return (str(dime) + ' dimes, ' + str(pennies) + ' pennies')
+    
+    if pennies > 0:
+        return (str(pennies) + ' pennies')
 
 if (__name__ == '__main__'):
-    print(return_big_coins(7))
-    print(return_big_coins(12))
-    print(return_big_coins(27))
-    print(return_big_coins(62))
+    #print(return_big_coins(7))
+    #print(return_big_coins(12))
+    #print(return_big_coins(27))
+    #print(return_big_coins(62))
+    print(return_big_coins(4))

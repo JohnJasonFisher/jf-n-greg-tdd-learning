@@ -13,7 +13,11 @@ def return_big_coins(input_number):
 
     pennies = input_number
 
-    return (str(nickel) + ' nickels, ' + str(pennies) + ' pennies')
+    if nickel > 0:
+        return (str(nickel) + ' nickels, ' + str(pennies) + ' pennies')
+
+    if dime > 0:
+        return (str(dime) + ' dimes, ' + str(pennies) + ' pennies')
 
 if (__name__ == '__main__'):
     print(return_big_coins(7))

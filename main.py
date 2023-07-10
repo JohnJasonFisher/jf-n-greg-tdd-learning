@@ -1,19 +1,22 @@
-input_number = 12
-#input_number = 7
-#input_number = 62
+def return_big_coins(input_number):
+    pennies = 0
+    nickel = 0
+    dime = 0
 
-pennies = 0
-nickel = 0
-dime = 0
+    while (input_number > 10):
+        dime +=1
+        input_number  -= 10
 
-while (input_number > 10):
-    dime +=1
-    input_number  -= 10
+    while (input_number > 5):
+        nickel +=1
+        input_number  -= 5
 
-while (input_number > 5):
-    nickel +=1
-    input_number  -= 5
+    pennies = input_number
 
-pennies = input_number
+    return (str(dime) + ' dimes, ' + str(nickel) + ' nickels, ' + str(pennies) + ' pennies')
 
-print(str(dime) + ' dimes, ' + str(nickel) + ' nickels, ' + str(pennies) + ' pennies')
+print(return_big_coins(7))
+print(return_big_coins(12))
+print(return_big_coins(27))
+print(return_big_coins(62))
+

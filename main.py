@@ -3,11 +3,11 @@ def return_big_coins(input_number):
     nickel = 0
     dime = 0
 
-    while (input_number > 10):
+    while (input_number >= 10):
         dime +=1
         input_number  -= 10
 
-    while (input_number > 5):
+    while (input_number >= 5):
         nickel +=1
         input_number  -= 5
 
